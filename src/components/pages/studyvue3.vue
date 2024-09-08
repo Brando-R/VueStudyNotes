@@ -1,6 +1,7 @@
 <template>
-    <div class="studyvue3">
+    <div class="studyvue">
         <h1>{{ titlemsg }}</h1>
+        <h1>{{ $route.params.titlemsg }}</h1>
         <!-- 1. v-for 循环 -->
         <h3>① v-for 循环</h3>
         <p>v-for 指令可以遍历数组或对象，并对每个元素进行渲染。" v-for="item in items" ", :key="item.id" 用来给每个元素添加一个唯一标识，以便 Vue 能跟踪每个节点的变化。</p>
@@ -30,7 +31,4 @@ export default{
 </script>
 
 <style>
-.studyvue3{
-    text-align: left;
-}
 </style>

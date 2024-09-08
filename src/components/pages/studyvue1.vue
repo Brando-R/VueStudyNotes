@@ -1,6 +1,7 @@
 <template>
-  <div class="vuestudy1">
+  <div class="studyvue">
     <h1>{{ titlemsg }}</h1>
+    <h1>{{ $route.params.titlemsg }}</h1>
     <!-- 1.双大括号的用处 -->
     <h3>①双大括号的用处:massage: {{ massage }}</h3>
     <!-- 2.使用v-html渲染的方法 -->
@@ -19,6 +20,8 @@
 </template>
 
 <script>
+import router from '@/router';
+
 export default {
   name: 'studyvue1',
   props:{
@@ -40,8 +43,6 @@ export default {
 }
 </script>
 <style>
-.vuestudy1{
-  text-align: left;
-}
+
 </style>
 

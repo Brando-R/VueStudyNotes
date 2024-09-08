@@ -1,6 +1,7 @@
 <template>
-    <div class="studyvue2">
+    <div class="studyvue">
         <h1>{{ titlemsg }}</h1>
+        <h1>{{ $route.params.titlemsg }}</h1>
         <!-- 1. v-if -->
         <h3> ① v-if</h3>
         <p v-if="flag"> 使用v-if指令可以根据条件判断是否渲染元素 " v-if="flag ", 条件为true时渲染元素,
@@ -32,7 +33,5 @@ export default {
 </script>
 
 <style>
-.studyvue2{
-    text-align: left;
-}
+
 </style>
